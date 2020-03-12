@@ -1,29 +1,39 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+const morgan = require('morgan');
 const path = require('path');
+const cors = require('cors');
 
+//config
 app.set('port', process.env.PORT || 3000);
-app.set('views', path.join(__dirname + '/views'));
-app.set('view engine', 'ejs');
 
+//database
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://admin:<password>@database-aizqn.gcp.mongodb.net/test?retryWrites=true&w=majority";
+const uri = "mongodb+srv://admin:huevon33@database-aizqn.gcp.mongodb.net/test?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
-  const jugadores = client.db("league").collection("jugadores");
-  const equipos = client.db("league").collection("equipos");
-  console.log('Base de datos Conectada');
+  const collection = client.db("test").collection("devices");
   // perform actions on the collection object
   client.close();
 });
 
+    
 
-app.use(require('./routes/index.js'));
 
-app.use(express.static(path.join(__dirname + '/public')));
+//middlewares
+app.use(morgan('dev'));
+app.use(express.json());
+app.use(cors());
 
+
+
+//routes
+app.use('/api', require('../src/routes/index'));
+
+
+//server
 app.listen(app.get('port'), ()=>{
-    console.log('Servidor conectado en puerto: ' + app.get('port'));
-});
+    console.log('Servidor 33legaue-webmain en puerto ', app.get('port'));
+})
