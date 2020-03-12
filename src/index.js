@@ -9,17 +9,10 @@ const cors = require('cors');
 app.set('port', process.env.PORT || 3000);
 
 //database
-
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://admin:huevon33@database-aizqn.gcp.mongodb.net/test?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
-
-    
+const URI = 'mongodb+srv://admin:huevon33@database-aizqn.gcp.mongodb.net/test?retryWrites=true&w=majority';
+mongoose.connect(URI, {useNewUrlParser:true, useUnifiedTopology:true})
+    .then(db => console.log('DB connected'))
+    .catch(err => console.log(err));   
 
 
 //middlewares
