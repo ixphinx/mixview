@@ -27,6 +27,7 @@ const Data = new Schema({
     jtarjestasroj: String,
     jamonestaciones: String,
     jequipo: String,
+    jdivision: String,
 
     /*------ Equipos ----- */
     enombre: String,
