@@ -47,13 +47,14 @@ const Data = new Schema({
     efairplay: String,
 
     /*------- Torneos ------*/
-    tfecha: String,
     tnombre: String,
-    thora: String,
-    tea: String,
-    teb: String,
-    tinfo: String,
-    testado: String,
+    tdivisional: String,
+
+
+    /*------- Fechas -------*/
+    fnombre: String,
+    ftorneo: String,
+
 
     /*------- Partidos ------*/
     pfecha: String,
