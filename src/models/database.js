@@ -85,7 +85,7 @@ const Data = new Schema({
     msgname: String,
     msgmail: String,
     msgtel: String,
-    msgtext: String
+    msgtext: String,
     
     /*------ imagenes ----- */
     imgdiv: String,
