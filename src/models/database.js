@@ -86,6 +86,10 @@ const Data = new Schema({
     msgmail: String,
     msgtel: String,
     msgtext: String
+    
+    /*------ imagenes ----- */
+    imgdiv,
+    imgurl
 
 
 });
