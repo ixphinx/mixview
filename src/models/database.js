@@ -88,8 +88,8 @@ const Data = new Schema({
     msgtext: String
     
     /*------ imagenes ----- */
-    imgdiv,
-    imgurl
+    imgdiv: String,
+    imgurl: String
 
 
 });
