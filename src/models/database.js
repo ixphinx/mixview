@@ -60,6 +60,7 @@ const Data = new Schema({
     ptorneo: String,
     pfecha: String,
     pdate: String,
+    ptime: String,
     pequipoa: String,
     pequipob: String,
     peamarcador: Number,
@@ -74,6 +75,7 @@ const Data = new Schema({
     pfpb: String,
     parbitro: String,
     pobservaciones: String,
+    pcancha: String,
 
     /*---- Seguridad------*/
     paneladmin: String,
