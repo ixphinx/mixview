@@ -59,6 +59,7 @@ const Data = new Schema({
     /*------- Partidos ------*/
     ptorneo: String,
     pfecha: String,
+    pdate: String,
     pequipoa: String,
     pequipob: String,
     peamarcador: Number,
