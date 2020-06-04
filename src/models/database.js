@@ -77,6 +77,12 @@ const Data = new Schema({
     parbitro: String,
     pobservaciones: String,
     pcancha: String,
+    pjugador: String,
+    ppuntualidad: String,
+    pfairplay: String,
+    ppelota: String,
+    pindumentaria: String,
+    pformulario: String,
 
     /*---- Seguridad------*/
     paneladmin: String,
