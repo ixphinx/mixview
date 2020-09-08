@@ -101,7 +101,15 @@ const Data = new Schema({
     
     /*------ imagenes ----- */
     imgdiv: String,
-    imgurl: String
+    imgurl: String,
+    
+    /*------ Estadisticas ------*/
+    estIdPartido: String,
+    estIdJugador: String,
+    estAmarilla: Number,
+    estDobAmarilla: Number,
+    estRoja: Number,
+    estGol: Number
 
 
 });
