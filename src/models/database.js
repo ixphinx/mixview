@@ -107,6 +107,8 @@ const Data = new Schema({
     estIdPartido: String,
     estIdEquipo: String,
     estIdJugador: String,
+    estNombre: String,
+    estApellido: String,
     estAmarilla: Number,
     estDobAmarilla: Number,
     estRoja: Number,
