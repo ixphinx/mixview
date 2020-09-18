@@ -112,7 +112,8 @@ const Data = new Schema({
     estAmarilla: Number,
     estDobAmarilla: Number,
     estRoja: Number,
-    estGol: Number
+    estGol: Number,
+    estAmonestacion: Number
 
 
 });
