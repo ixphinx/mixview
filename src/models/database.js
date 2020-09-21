@@ -19,6 +19,7 @@ const Data = new Schema({
     /*---- Jugadores ----- */
     jnombre: String,
     jimg: String,
+    jescudo: String,
     japellido: String,
     jcedula: String,
     jgenero: String,
