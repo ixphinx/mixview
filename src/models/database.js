@@ -15,6 +15,13 @@ const Data = new Schema({
     combody: String,
     comhead1: String,
     combody1: String,
+    
+     /*------ Backgrounds -----*/
+    backgrounda: String,
+    backgroundb: String,
+    backgroundc: String,
+    backgroundfem: String,
+    backgroundf:String,
 
     /*---- Jugadores ----- */
     jnombre: String,
