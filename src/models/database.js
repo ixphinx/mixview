@@ -7,6 +7,14 @@ const Data = new Schema({
     ipart:String,
     iparc:String,
     
+    /*---- Cuentas de Usuarios ----*/
+    user: String,
+    password: String,
+    aproved: Boolean,
+    superadmin: Boolean,
+    veedor: Boolean;
+    
+    
     /*----- Noticias---- */
     noticias:String,
 
