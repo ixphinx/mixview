@@ -10,9 +10,11 @@ const Data = new Schema({
     /*---- Cuentas de Usuarios ----*/
     user: String,
     password: String,
+    username: String,
+    userlastname: String,
+    userci: String,
     aproved: Boolean,
-    superadmin: Boolean,
-    veedor: Boolean;
+    usertype: String,
     
     
     /*----- Noticias---- */
