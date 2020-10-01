@@ -42,6 +42,7 @@ const Data = new Schema({
     jgenero: String,
     jgoles: Number,
     jtarjetasam: Number,
+    jtarjetasdam: Number,
     jtarjestasroj: Number,
     jamonestaciones: Number,
     jequipo: String,
