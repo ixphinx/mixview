@@ -44,7 +44,7 @@ const Data = new Schema({
     jtarjetasam: Number,
     jtarjetasdam: Number,
     jtarjestasroj: Number,
-    jamonestaciones: Number,
+    jamonestaciones: String,
     jequipo: String,
     jdivision: String,
 
