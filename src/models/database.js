@@ -47,6 +47,7 @@ const Data = new Schema({
     jamonestaciones: String,
     jamonestacionid: String,
     jfechaamonestacion: String,
+    jfechainicioamonestacion: String,
     jequipo: String,
     jdivision: String,
 
