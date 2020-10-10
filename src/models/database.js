@@ -46,6 +46,7 @@ const Data = new Schema({
     jtarjestasroj: Number,
     jamonestaciones: String,
     jamonestacionid: String,
+    jfechaamonestacion: String,
     jequipo: String,
     jdivision: String,
 
