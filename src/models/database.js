@@ -126,6 +126,7 @@ const Data = new Schema({
     imgurl: String,
     
     /*------ Estadisticas ------*/
+    estIdtorneo: String,
     estIdPartido: String,
     estIdEquipo: String,
     estIdJugador: String,
