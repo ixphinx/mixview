@@ -12,7 +12,7 @@ const Data = new Schema({
     city: String,
     video: String,
     news: String,
-    newsid: string,
+    newsid: String,
     newsbody: String,
 
 
