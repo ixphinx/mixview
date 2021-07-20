@@ -4,7 +4,7 @@ const {Schema} = mongoose;
 const Data = new Schema({
     
     /* Data */
-    class: String,
+    type: String,
     videoid: String,
     videourl: String,
 
